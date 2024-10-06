@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    margin: 0;
+    padding: 0;
+}
+html{
+    /* me permite deslizar cuando hago clic en los links del menu */
+    scroll-behavior: smooth;
+}
+/* MENU */
+.contenedor-header{
+    background: #1e2326;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.contenedor-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.contenedor-header header .logo a{
+    font-family: 'Righteous';
+    font-size: 36px;
+    color: #1CB698;
+    text-decoration: none;
+}
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+}
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+.contenedor-header header nav ul li a:hover{
+    color: #1CB698;
+}
+.nav-responsive{
+    background-color: #1CB698;
+    color:#fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+/* SECCION I N I C I O */
+.inicio {
+    background: linear-gradient(to top, rgba(73, 76, 78, 0.8), rgba(30,35,38,1)), 
+    url(https://ppluis84.github.io/Portafolio/img/p1.png);
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.contenido {
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en una columna */
+    align-items: center; /* Centra el contenido horizontalmente */
+    justify-content: center; /* Centra el contenido verticalmente */
+}
+.inicio .contenido h1 {
+    font-family: 'Arial', sans-serif; /* Cambia el tipo de letra */
+    font-size: 3rem; /* Cambia el tamaño del título */
+    font-weight: bold; /* Haz que el título sea más grueso */
+    text-transform: uppercase; /* Convierte el texto en mayúsculas */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    margin-bottom: 10px; /* Espacio entre el título y la descripción */
+}
+.inicio .contenido p{
+    font-family: 'Verdana', sans-serif; /* Cambia el tipo de letra de la descripción */
+    font-size: 1.5rem; /* Cambia el tamaño del texto */
+}
+.resumen {
+    padding: 40px;
+    text-align: center;
+    background-color: #f4f4f4; /* Fondo claro para diferenciarla de la sección anterior */
+    color: #333;
+}
+
+/* Estilos para el título de la nueva sección */
+.resumen h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Estilos para la fecha */
+.resumen .fecha {
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+/* Estilos para "Resumes" */
+.resumen h3 {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Estilos para el párrafo */
+.resumen .descripcion {
+    font-family: 'Verdana', sans-serif;
+    font-size: 1.2rem;
+    margin: 20px 70px 20px 70px; /* 5px arriba, 15px abajo, y 0px a los lados */
+}
+
+/* Estilos para la imagen */
+.resumen img {
+    max-width: 50%; /* Hace que la imagen sea responsive */
+    height: auto;
+    border-radius: 10px; /* Opcional, si deseas bordes redondeados */
+}
+
+
+
+/* Estilos para la nueva sección */
+.seccion {
+    padding: 40px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Contenedor con flexbox para dividir en dos columnas */
+.contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+    gap: 20px; /* Espacio entre la imagen y la descripción */
+}
+
+/* Estilos para la imagen */
+.contenedor img {
+    width: 40%; /* La imagen ocupará el 40% del contenedor */
+    height: auto; /* Mantiene las proporciones de la imagen */
+    border-radius: 10px; /* Opcional: bordes redondeados */
+}
+
+/* Estilos para el contenedor de texto */
+.texto {
+    width: 55%; /* La descripción ocupará el 55% del contenedor */
+    text-align: left;
+}
+
+/* Estilos para "Resumes" */
+.texto h3 {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Estilos para el párrafo */
+.texto .descripcion {
+    font-family: 'Verdana', sans-serif;
+    font-size: 1.2rem;
+    margin: 10px 0; /* Reduce los márgenes superior e inferior */
+}
+
+
