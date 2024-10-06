@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETL y Análisis de Datos</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!--MENU ENCABEZADO-->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="https://ppluis84.github.io/Portafolio/" target="_blank">José Luis</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="https://ppluis84.github.io/Portafolio/#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="https://ppluis84.github.io/Portafolio/#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="https://ppluis84.github.io/Portafolio/#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="https://ppluis84.github.io/Portafolio/#curriculum" onclick="seleccionar()">CURRICULUM</a>
+                    </li>
+                    <li><a href="https://ppluis84.github.io/Portafolio/#portfolio" onclick="seleccionar()">PORTFOLIO</a>
+                    </li>
+                    <li><a href="https://ppluis84.github.io/Portafolio/#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+    <br><br>
+    <!--SECCION INICIO-->
+    <div id="inicio" class="inicio">
+        <div class="contenido">
+            <h1>ETL y Analisis de Datos (SQL+Power BI)</h1>
+            <br>
+            <p>Este es un proyecto donde se usaron las herramientas de ETL y visualización de datos.</p>
+        </div>
+    </div>
+    <!--SECCION RESUMEN-->
+    <div class="resumen">
+        <h2>ETL y Analisis de Datos (SQL+Power BI)</h2>
+        <p class="fecha">Enero de 2024</p>
+        <h3>Resumen:</h3>
+        <p class="descripcion">Este proyecto tuvo como objetivo principal, entregar información para el control de las asistencias de los trabajadores, la empresa para la que se desarrollo el proyecto es una de producción y exportación de Berries ubicada en el cantón Zapotillo de la provincia de Loja con alrededor de 400 trabajadores, los softwares que se utilizaron fueron Excel, Python, SQL Server y Power BI, el flujo de trabajo va desde la extracción de la información, limpieza de los datos y transformación, creación de una base de datos, carga en Power BI y elaboración del dashboard.</p>
+        <br>
+        <img src="img/p1.png" alt="Flujo de trabajo">
+    </div>
+       <!--SECCION FUENTE DE DATOS-->
+    <div class="seccion">
+        <div class="contenedor">
+            <div class="texto">
+                <h3>Fuente de Datos</h3>
+                <p class="descripcion">La información se la obtiene principalmente del ERP <a
+                        href="https://www.agritracer.app/" target="_blank">AGRITRACER</a>, software destinado a proporcionar
+                    información relevante sobre el registro de las horas laboradas por el trabajador en el sector agrícola
+                    esta información se descarga diariamente en formato xlsx y csv, también se utilizó información
+                    registrada en tablas elaboradas por el analista en función de los acontecimientos diarios.</p>
+            </div>
+            <img src="img/p2.png" alt="Imagen descriptiva">
+        </div>
+    </div>
+        </div>
+       <!--SECCION LIMPIEZA DE DATOS-->
+    <div class="seccion">
+        <div class="contenedor">
+            <div class="texto">
+                <h3>Limpieza de Datos</h3>
+                <p class="descripcion">La limpieza de los datos se realizó en Power Query de Microsoft Excel, para poder
+                    automatizar el proceso y por la facilidad y compatibilidad en lo formatos de las fuentes de datos, se
+                    utilizó instrucciones desde la interfaz y algunos códigos de lenguaje m propios, luego se procedió a
+                    cargas las tablas en hojas independientes que se transformaron en formato csv, de esta manera se
+                    pudieron cargar a SQL Server por medio de código, para completar la automatización del proceso.</p>
+            </div>
+            <img src="img/p3.png" alt="Imagen descriptiva">
+        </div>
+    </div>
+    <!-- SECCION DATA WEREHOUSE -->
+    <div class="seccion">
+        <div class="contenedor">
+            <div class="texto">
+                <h3>Data Werehouse</h3>
+                <p class="descripcion">El modelado de la base de datos se realizó en SQL Server. Se relacionó la tabla extraída del ERP
+                    con los detalles del trabajador, periodos en los que ha trabajado en la empresa (los trabajadores entran y salen
+                    recurrentemente debido al giro del negocio), ingresos diarios en el transporte (bus proporcionado por la empresa o
+                    transporte propio) para identificar asistencias diarias, actividades, con sus centros de costo y las áreas a las que
+                    pertenecen cada una, entre otros atributos.</p>
+                </div>
+            <img src="img/p4.png" alt="Imagen descriptiva">
+        </div>
+    </div>
+    <!-- SECCION DATA WEREHOUSE -->
+    <div class="seccion">
+        <div class="contenedor">
+            <div class="texto">
+                <h3>Dashboard</h3>
+                <p class="descripcion">El modelado de la base de datos se realizó en SQL Server. Se relacionó la tabla extraída del ERP
+                    con los detalles del trabajador, periodos en los que ha trabajado en la empresa (los trabajadores entran y salen
+                    recurrentemente debido al giro del negocio), ingresos diarios en el transporte (bus proporcionado por la empresa o
+                    transporte propio) para identificar asistencias diarias, actividades, con sus centros de costo y las áreas a las que
+                    pertenecen cada una, entre otros atributos.</p>
+                </div>
+            <img src="https://ppluis84.github.io/Portafolio/img/p1.png" alt="Imagen descriptiva">
+        </div>
+    </div>
+</body>
+</html>
