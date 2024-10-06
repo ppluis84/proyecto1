@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">José Luis</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <br><br><br><br>
+            <div class="contenedor-img">
+                <img src="img/hero.png" alt="">
+            </div>
+            <h1>JOSE LUIS ROMERO CAPA</h1>
+            <h2>Economista - Especialista en Business Intelligence</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/joseluis.romero.1614?locale=es_LA" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://x.com/JoseL_RomeroC" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/jos%C3%A9-luis-romero-capa-691740167/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy José Luis Romero.</span> economista de profesión, me especializo en el análisis de datos, 
+                actualmente laboro para una empresa de producción y comercialización de berries de exportación. Me apasiona transformar
+                datos en información valiosa, optimizando procesos y detectando patrones clave. A través de la automatización y el uso
+                eficiente de herramientas de análisis, facilito la gestión diaria de asistencia y horas trabajadas, mejorando la precisión y
+                reduciendo el tiempo en la elaboración de reportes. Gracias a mi enfoque estratégico y tecnológico, la empresa ha logrado
+                incrementar su eficiencia, sustituyendo procesos manuales por soluciones automatizadas que ahorran tiempo y recursos.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            15-01-1980
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +593 99 338 1149
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            pp1lrc@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            https://ppluis84.github.io/Portafolio/
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            237-145 Loja, Ecuador
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>ASISTENTE DE COMPENSACIONES</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-chart-line"></i>
+                            <span>DATOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-guitar"></i>
+                            <span>GUITARRA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-film"></i>
+                            <span>CINE</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="pdf/CV.pdf" target="_blank" download="Mi_CV">
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+            </a>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>RStudio</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Excel</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Power BI</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>81%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>SQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Economía</h4>
+                        <span class="casa">Universidad Nacional de Loja</span>
+                        <span class="fecha">2015 - 2020</span>
+                        <p>Número de registro en la SENESCYT 1008-2021-2269524</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Inteligencia de Negocios</h4>
+                        <span class="casa">Universidad Internacional de la Rioja</span>
+                        <span class="fecha">2023 - 2024</span>
+                        <p>Número de registro en la SENESCYT 1008-2021-2269524</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Cursos</h4>
+                        <span class="casa">Universidad de Oxford</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <ul>
+                            <li>Curso de FINDER, Dictado por la fundacion Carlos Slim</li>
+                            <li>Curso de CURADOR DE DATOS Dictado por la fundacion Carlos Slim</li>
+                            <li>Curso de SQL, Dictado por A2 Capacitación</li>
+                            <li>Curso de FUNDAMENTOS DE PYTHON DICTADO POR CISCO</li>
+                            <li>Curso COMO LIDEARA PERSONAS Dictado por Harvard ManageMentor</li>
+                            <li>Curso TOMA DE DECICIONES Dictado por Harvard ManageMentor</li>
+                            <li>ANÁLISIS Y PROCESAMIENTO DE BASES DE DATOS CENSALES CON REDATAM PARA LA TOMA
+                                DE DECISIONES, dictado por el Instituto Nacional de Estadísticas y Censos, Universidad Técnica
+                                Particular de Loja y la Secretaría de Planificación y Desarrollo.</li>
+                            <li>Programa Universitario Avanzado en desarrollo de competencias clave para la empresa con
+                            recursos Harvard ManageMentor en coordinacion con la UNIR.</li>
+                        </ul>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Analista</h4>
+                        <span class="casa">Plannning & Solution S.A.</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <ul>
+                            <li>Busqueda y recopilación de datos</li>
+                            <li>Limpieza y tratamiento de datos</li>
+                            <li>Construcción e interpretación de indicadores</li>
+                            <li>Redacción de informes</li>
+                        </ul>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Supervisor de covertura censal</h4>
+                        <span class="casa">Nombre de Compañía</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <ul>
+                            <li>Capacitación de metodología censal</li>
+                            <li>Supervisión de recopilación de datos censales</li>
+                            <li>Apoyo al censita en la resolución de conflictos</li>
+                            <li>Redacción de informes</li>
+                        </ul>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Asistente de compensaciones</h4>
+                        <span class="casa">SIGLO BPO</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <ul>
+                            <li>Automatización de reportes en Excel y Power BI</li>
+                            <li>Consultas SQL</li>
+                            <li>Manipulación de AGRITRACER (ERP)</li>
+                            <li>Análisis de datos</li>
+                            <li>Construccion de KPI's</li>
+                        </ul>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/p1.png" alt="">
+                    <div class="overlay">
+                        <h3>ETL y Análisis de Datos</h3>
+                        <p>Python y Power BI</p>       
+                    </div>
+                    <div class="descripción">
+                        <h3>Proyección de las importaciones</h3>
+                        <p>Resumen: En este proyecto se tiene como objetivo principal la creación de un sistema de visualización de datos para una empresa de exportación de Berries, utilizando SQL Server como base de datos y herramientas de visualización como Power BI. Se pudo seguir varios pasos para lograr este objetivo, incluyendo la limpieza de los datos, creación de la base de datos, carga de los datasets correspondientes, la ejecución de consultas para obtener información clave y la generación de visualizaciones relevantes para el personal del hospital.</p>
+                        <br>
+                        <a href="https://flaviomconde.github.io/Portafolio_DataAnalyst1/post/proyecto-2/" target="_blank" class="enlace-proyecto-1">Leer más..</a>
+                    </div>
+                    <br>
+                </div>
+                <hr>
+                <br>
+                <div class="proyecto">
+                    <img src="img/p2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                    <div class="descripción">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Ecuador 237-145, Loja
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                +593 99 33 81149 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                pp1lrc@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.facebook.com/joseluis.romero.1614?locale=es_LA" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://x.com/JoseL_RomeroC" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/jos%C3%A9-luis-romero-capa-691740167/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
